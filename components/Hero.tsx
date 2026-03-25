@@ -16,7 +16,7 @@ const Hero = () => {
           className="w-40 md:w-auto h-auto object-contain"
         />
 
-        <h1 className="font-bold font-mono text-2xl md:text-4xl text-background leading-tight">
+        <h1 className="font-bold font-mono text-xl md:text-4xl text-background leading-tight">
           CONGRESO DE{" "}
           <span className="text-cyan-500 block md:inline">
             TRANSFORMACIÓN PARA EL FUTURO
@@ -31,7 +31,7 @@ const Hero = () => {
         />
 
         <div>
-          <h2 className="text-4xl md:text-8xl text-background font-bold">
+          <h2 className=" text-3xl md:text-8xl text-background font-bold">
             RESERVA LA FECHA
           </h2>
           <h4 className="font-mono italic text-cyan-400 text-xl md:text-4xl mt-2">

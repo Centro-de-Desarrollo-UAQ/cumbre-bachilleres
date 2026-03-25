@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Heart } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -49,12 +49,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-background/30 mt-8 pt-6 text-center text-sm">
+        <div className="border-b border-background/30 mt-8 pt-6 pb-4 text-center text-sm">
           <p>
             &copy; {new Date().getFullYear()} Cumbre Bachilleres UAQ. Todos los
             derechos reservados.
           </p>
         </div>
+        <p className=" mt-2 text-sm text-center">
+          Made with ♥︎ by Centro de Desarrollo, Facultad de Informática UAQ
+        </p>
       </div>
     </footer>
   );

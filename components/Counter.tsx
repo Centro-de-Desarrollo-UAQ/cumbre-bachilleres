@@ -55,7 +55,7 @@ const Counter = () => {
   return (
     <div className=" w-full flex flex-col md:flex-row justify-center items-center -mt-18 z-10 mb-8 ">
       <div className="flex md:justify-around md:px-10 bg-foreground py-4 w-5/6 rounded-md flex-col md:flex-row items-center gap-8 ">
-        <div className="items-start flex flex-row gap-4">
+        <div className="items-start flex flex-row gap-1">
           {timeLeft ? (
             <>
               <TimeUnit value={timeLeft.days} label="Días" />
