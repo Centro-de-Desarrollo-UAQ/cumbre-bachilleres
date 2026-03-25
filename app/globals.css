@@ -1,22 +1,21 @@
 @import "tailwindcss";
 
-@layer theme {
-  :root {
-    --background: #fafafa;
-    --foreground: #090a12;
-    --primary: #099bbf;
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-    --color-primary: var(--primary);
-    --font-sans: var(--font-urbanist), "Urbanist", sans-serif;
-    --font-mono: var(--font-ibm-plex-sans), "IBM Plex Sans", sans-serif;
-  }
+@theme inline {
+  --color-background: #fafafa;
+  --color-foreground: #090a12;
+  --color-primary: #099bbf;
+  --font-sans: var(--font-urbanist), "Urbanist", sans-serif;
+  --font-mono: var(--font-ibm-plex-sans), "IBM Plex Sans", sans-serif;
 }
 
-@layer base {
-  body {
-    background: var(--background);
-    color: var(--foreground);
-    font-family: var(--font-sans);
-  }
+:root {
+  --background: #fafafa;
+  --foreground: #090a12;
+  --primary: #099bbf;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
 }
