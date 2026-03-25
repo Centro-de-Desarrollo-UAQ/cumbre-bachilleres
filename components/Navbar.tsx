@@ -23,7 +23,7 @@ export default function Navbar() {
             <Image
               src={`${prefix}/cumbre_logo.png`}
               alt="Cumbre Logo"
-              className="h-10 w-auto"
+              className="md:h-10 md:w-auto w-20"
               width={200}
               height={100}
               priority
@@ -32,7 +32,7 @@ export default function Navbar() {
             <Image
               src={`${prefix}/bachilleres_logo.png`}
               alt="Bachilleres Logo"
-              className="h-8 w-auto"
+              className="md:h-8 md:w-auto w-24"
               width={200}
               height={100}
               priority

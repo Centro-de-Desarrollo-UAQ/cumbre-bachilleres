@@ -1,3 +1,5 @@
+"use client";
+
 interface VideoSectionProps {
   src: string;
   title?: string;
@@ -39,6 +41,13 @@ const VideoSection = ({
           <source src={src} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <style jsx>{`
+          @media (max-width: 400px) {
+            video {
+              object-fit: contain !important;
+            }
+          }
+        `}</style>
         <p className="sr-only">{title}</p>
       </div>
     </div>
