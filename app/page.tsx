@@ -8,17 +8,17 @@ import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className=" overflow-x-clip">
       <Navbar />
       <main className="">
-        <div className=" w-full h-fit px-10 pt-4">
+        <div className="w-full h-fit px-4 md:px-10 pt-4">
           <Hero />
         </div>
 
         <Counter />
         <VideoSection
           src={
-            "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+            "https://nathalia-dssb.github.io/cumbres-bachilleres-assets/invitacion_director_bachilleres.mp4"
           }
         />
         <About />

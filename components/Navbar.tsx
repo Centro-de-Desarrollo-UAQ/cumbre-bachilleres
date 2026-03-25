@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { prefix } from "@/lib/prefix";
 
@@ -10,6 +13,8 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <nav className="w-full bg-background border-b border-gray-200 sticky top-0 z-10">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,6 +56,7 @@ export default function Navbar() {
               type="button"
               className="text-foreground hover:text-primary"
               aria-label="Toggle menu"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg
                 className="h-6 w-6"
@@ -58,15 +64,44 @@ export default function Navbar() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
               </svg>
             </button>
           </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-background border-t border-gray-200 px-4 py-4 space-y-4">
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="block text-foreground hover:text-primary transition-colors font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.name}
+            </a>
+          ))}
         </div>
       </div>
     </nav>

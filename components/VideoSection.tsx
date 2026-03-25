@@ -20,12 +20,12 @@ const VideoSection = ({
   loop = false,
 }: VideoSectionProps) => {
   return (
-    <div className="w-full  px-12 py-8 mt-6">
+    <div className="w-full px-6 md:px-12 py-8 mt-6 ">
       <div className="w-full mx-auto ">
         <video
           controls
           preload="metadata"
-          className="w-full h-160 rounded-lg"
+          className="w-full h-80 md:h-150 rounded-lg"
           style={{
             aspectRatio: aspectRatio,
             objectFit: objectFit,
