@@ -1,6 +1,7 @@
 import React from "react";
 import HexagonBackground from "./HexagonBackground";
 import Image from "next/image";
+import { prefix } from "@/lib/prefix";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       <HexagonBackground />
       <div className="z-5 flex flex-col justify-center gap-10 px-10 items-start">
         <Image
-          src="/bachilleres_logo_w.svg"
+          src={`${prefix}/bachilleres_logo_w.svg`}
           alt=""
           width={350}
           height={67}
@@ -20,7 +21,7 @@ const Hero = () => {
           <span className="text-cyan-500">TRANSFORMACIÓN PARA EL FUTURO</span>
         </h1>
         <Image
-          src="/cumbre_logo_w.svg"
+          src={`${prefix}/cumbre_logo_w.svg`}
           alt=""
           width={350}
           height={67}
@@ -38,7 +39,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/hero_image.jpg')`,
+          backgroundImage: `url('${prefix}/hero_image.jpg')`,
         }}
       />
 

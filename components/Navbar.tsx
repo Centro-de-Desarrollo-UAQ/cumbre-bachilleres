@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { prefix } from "@/lib/prefix";
 
 const navLinks = [
   { name: "Acerca de", href: "#acerca-de" },
@@ -15,7 +16,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-6">
             <Image
-              src="/cumbre_logo.png"
+              src={`${prefix}/cumbre_logo.png`}
               alt="Cumbre Logo"
               className="h-10 w-auto"
               width={200}
@@ -24,7 +25,7 @@ export default function Navbar() {
             />
             <div className="h-8 w-px bg-gray-300" />
             <Image
-              src="/bachilleres_logo.png"
+              src={`${prefix}/bachilleres_logo.png`}
               alt="Bachilleres Logo"
               className="h-8 w-auto"
               width={200}

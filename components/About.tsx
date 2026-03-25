@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { prefix } from "@/lib/prefix";
 import React from "react";
 
 const About = () => {
@@ -10,7 +11,7 @@ const About = () => {
           <span>
             {" "}
             <Image
-              src="/cumbre_logo_b.svg"
+              src={`${prefix}/cumbre_logo_b.svg`}
               alt=""
               width={360}
               height={70}
@@ -28,14 +29,14 @@ const About = () => {
       </div>
       <div className="relative">
         <Image
-          src="/hive_logo.svg"
+          src={`${prefix}/hive_logo.svg`}
           alt=""
           width={264}
           height={295}
           className="absolute -bottom-10 -right-10 rotate-180 w-90 h-auto"
         />
         <Image
-          src="/about-photo.jpg"
+          src={`${prefix}/about-photo.jpg`}
           alt=""
           width={5864}
           height={3915}
