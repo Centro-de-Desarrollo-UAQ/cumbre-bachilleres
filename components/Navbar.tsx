@@ -1,6 +1,4 @@
 import Image from "next/image";
-import cumbreLogo from "@/public/cumbre_logo.png";
-import bachilleresLogo from "@/public/bachilleres_logo.png";
 
 const navLinks = [
   { name: "Acerca de", href: "#acerca-de" },
@@ -17,16 +15,20 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-6">
             <Image
-              src={cumbreLogo}
+              src="/cumbre_logo.png"
               alt="Cumbre Logo"
               className="h-10 w-auto"
+              width={200}
+              height={100}
               priority
             />
             <div className="h-8 w-px bg-gray-300" />
             <Image
-              src={bachilleresLogo}
+              src="/bachilleres_logo.png"
               alt="Bachilleres Logo"
               className="h-8 w-auto"
+              width={200}
+              height={100}
               priority
             />
           </div>
