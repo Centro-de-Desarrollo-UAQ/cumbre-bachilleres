@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Counter from "@/components/Counter";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
@@ -13,7 +14,11 @@ export default function Home() {
         </div>
 
         <Counter />
-
+        <VideoSection
+          src={
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          }
+        />
         <About />
       </main>
     </div>

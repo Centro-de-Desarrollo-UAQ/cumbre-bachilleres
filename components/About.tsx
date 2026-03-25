@@ -3,9 +3,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-row w-full px-12 justify-between">
+    <div className="flex flex-row w-full gap-10 px-12 justify-between">
       <div className="w-1/2 space-y-8 flex flex-col justify-center">
-        <h2 className=" flex flex-row text-6xl items-center gap-2 font-semibold">
+        <h2 className=" flex flex-row text-6xl items-center gap-2 font-semibold text-nowrap">
           ¿Qué es{" "}
           <span>
             {" "}
@@ -39,7 +39,7 @@ const About = () => {
           alt=""
           width={5864}
           height={3915}
-          className=" w-200 h-120 object-cover"
+          className=" w-160 h-120 object-cover"
         />
       </div>
     </div>

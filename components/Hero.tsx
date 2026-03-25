@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="w-full h-200 relative flex -z-5">
+    <div className="w-full h-200 relative flex -z-5 overflow-clip">
       <HexagonBackground />
       <div className="z-5 flex flex-col justify-center gap-10 px-10 items-start">
         <Image

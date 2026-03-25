@@ -89,7 +89,7 @@ export default function HexagonBackground() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const hexHeight = 160;
+    const hexHeight = 120;
     const hexWidth = (hexHeight * Math.sqrt(3)) / 2;
 
     const hexArr: { hex: Hexagon; color: string }[] = [];
@@ -158,7 +158,7 @@ export default function HexagonBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-none  z-5 mix-blend-multiply"
+      className="absolute inset-0 w-[120vw] h-[120vh] pointer-events-none  z-5 mix-blend-multiply"
     />
   );
 }

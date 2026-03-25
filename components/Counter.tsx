@@ -42,14 +42,12 @@ const calculateTimeLeft = (targetDate: Date): TimeLeft => {
 
 const Counter = () => {
   const targetDate = useMemo(() => new Date("2026-05-14T09:00:00"), []);
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(() =>
-    calculateTimeLeft(targetDate),
-  );
+  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft(targetDate));
-    }, 1000);
+    const updateTimer = () => setTimeLeft(calculateTimeLeft(targetDate));
+    updateTimer();
+    const timer = setInterval(updateTimer, 1000);
 
     return () => clearInterval(timer);
   }, [targetDate]);
@@ -58,13 +56,27 @@ const Counter = () => {
     <div className=" w-full flex flex-row justify-center items-center -mt-18 z-10 mb-8 ">
       <div className="flex justify-around px-10 bg-foreground py-4 w-5/6 rounded-md ">
         <div className="items-start flex flex-row gap-4">
-          <TimeUnit value={timeLeft.days} label="Días" />
-          <p className=" text-background text-6xl font-bold font-mono">:</p>
-          <TimeUnit value={timeLeft.hours} label="Horas" />
-          <p className=" text-background text-6xl font-bold font-mono">:</p>
-          <TimeUnit value={timeLeft.minutes} label="Min" />
-          <p className=" text-background text-6xl font-bold font-mono">:</p>
-          <TimeUnit value={timeLeft.seconds} label="Seg" />
+          {timeLeft ? (
+            <>
+              <TimeUnit value={timeLeft.days} label="Días" />
+              <p className=" text-background text-6xl font-bold font-mono">:</p>
+              <TimeUnit value={timeLeft.hours} label="Horas" />
+              <p className=" text-background text-6xl font-bold font-mono">:</p>
+              <TimeUnit value={timeLeft.minutes} label="Min" />
+              <p className=" text-background text-6xl font-bold font-mono">:</p>
+              <TimeUnit value={timeLeft.seconds} label="Seg" />
+            </>
+          ) : (
+            <>
+              <TimeUnit value={0} label="Días" />
+              <p className=" text-background text-6xl font-bold font-mono">:</p>
+              <TimeUnit value={0} label="Horas" />
+              <p className=" text-background text-6xl font-bold font-mono">:</p>
+              <TimeUnit value={0} label="Min" />
+              <p className=" text-background text-6xl font-bold font-mono">:</p>
+              <TimeUnit value={0} label="Seg" />
+            </>
+          )}
         </div>
 
         <div className="flex flex-col gap-2 justify-center text-background">
