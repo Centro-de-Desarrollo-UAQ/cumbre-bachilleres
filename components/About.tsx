@@ -47,7 +47,7 @@ const About = () => {
           alt=""
           width={5864}
           height={3915}
-          className="w-full  md:w-205 md:max-w-none h-auto md:h-120 object-cover rounded-lg"
+          className="w-full md:w-205 md:min-w-1/2 h-auto md:h-full object-cover rounded-lg"
         />
       </div>
     </div>
