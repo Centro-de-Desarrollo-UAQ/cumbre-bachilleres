@@ -5,20 +5,20 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col md:flex-row w-full gap-6 md:gap-10 px-6 md:px-12 py-8 justify-between">
-      <div className="w-full md:w-1/2 space-y-6 md:space-y-8 flex flex-col justify-center">
-        <div className="flex flex-col md:flex-row text-5xl text-center items-center w-full text-nowrap md:text-5xl gap-2 md:gap-4 font-semibold">
-          ¿Qué es{" "}
-          <span className="w-full md:w-auto">
+      <div className="w-full md:min-w-1/2 md:max-w-1/2 space-y-6 md:space-y-8 flex flex-col justify-center">
+        <div className="flex flex-col items-center  lg:flex-row md:grid md:grid-rows-2 md:grid-cols-2 text-5xl text-center md:items-start w-full md:w-fit text-nowrap md:text-5xl gap-2 md:justify-start md:gap-1 font-semibold">
+          <div className="w-fit">¿Qué es </div>
+          <div className="w-fit">
             {" "}
             <Image
               src={`${prefix}/cumbre_logo_b.svg`}
               alt=""
               width={360}
               height={70}
-              className="min-w-28 max-w-58 md:w-auto h-auto inline-block"
+              className="min-w-28 max-w-58 md:w-fit h-auto inline-block"
             />{" "}
-          </span>{" "}
-          2026?
+          </div>{" "}
+          <div className="w-fit">2026?</div>
         </div>
         <p className="text-base md:text-xl leading-relaxed">
           <span className="font-bold text-primary">CUMBRE</span> es el lugar de
@@ -34,7 +34,7 @@ const About = () => {
           que juntos, descubramos tu potencial.
         </p>
       </div>
-      <div className="relative w-full md:w-auto flex justify-center">
+      <div className="relative w-full md:w-auto flex justify-center items-end">
         <Image
           src={`${prefix}/hive_logo.svg`}
           alt=""
@@ -47,7 +47,7 @@ const About = () => {
           alt=""
           width={5864}
           height={3915}
-          className="w-full md:w-205 md:min-w-1/2 h-auto md:h-full object-cover rounded-lg"
+          className="w-full md:w-205 md:min-w-1/2 h-auto md:h-full object-cover rounded-lg max-h-full"
         />
       </div>
     </div>
