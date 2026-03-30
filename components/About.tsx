@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="flex flex-col md:flex-row w-full gap-6 md:gap-10 px-6 md:px-12 py-8 justify-between">
       <div className="w-full md:w-1/2 space-y-6 md:space-y-8 flex flex-col justify-center">
-        <h2 className="flex flex-row text-3xl text-nowrap md:text-6xl items-start md:items-center gap-2 md:gap-4 font-semibold">
+        <div className="flex flex-col md:flex-row text-5xl text-center items-center w-full text-nowrap md:text-5xl gap-2 md:gap-4 font-semibold">
           ¿Qué es{" "}
           <span className="w-full md:w-auto">
             {" "}
@@ -15,11 +15,11 @@ const About = () => {
               alt=""
               width={360}
               height={70}
-              className="w-48 md:w-auto h-auto inline-block"
+              className="min-w-28 max-w-58 md:w-auto h-auto inline-block"
             />{" "}
           </span>{" "}
           2026?
-        </h2>
+        </div>
         <p className="text-base md:text-xl leading-relaxed">
           <span className="font-bold text-primary">CUMBRE</span> es el lugar de
           máxima perspectiva. Un día para ganar altura y claridad. El éxito no

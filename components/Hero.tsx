@@ -31,7 +31,7 @@ const Hero = () => {
         />
 
         <div>
-          <h2 className=" text-3xl md:text-8xl text-background font-bold">
+          <h2 className=" text-3xl md:text-8xl text-background font-bold md:text-nowrap">
             RESERVA LA FECHA
           </h2>
           <h4 className="font-mono italic text-cyan-400 text-xl md:text-4xl mt-2">

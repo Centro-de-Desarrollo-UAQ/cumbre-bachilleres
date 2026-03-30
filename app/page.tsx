@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Counter from "@/components/Counter";
 import Footer from "@/components/Footer";
+import Location from "@/components/Location";
 
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -22,6 +23,7 @@ export default function Home() {
           }
         />
         <About />
+        <Location />
       </main>
       <Footer />
     </div>

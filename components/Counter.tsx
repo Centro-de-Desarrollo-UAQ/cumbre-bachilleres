@@ -53,39 +53,30 @@ const Counter = () => {
   }, [targetDate]);
 
   return (
-    <div className=" w-full flex flex-col md:flex-row justify-center items-center -mt-18 z-10 mb-8 ">
-      <div className="flex md:justify-around md:px-10 bg-foreground py-4 w-5/6 rounded-md flex-col md:flex-row items-center gap-8 ">
-        <div className="items-start flex flex-row gap-1">
+    <div className=" w-full flex flex-col justify-center items-center -mt-18 z-10 mb-8 ">
+      <div className="flex md:justify-around md:px-10 bg-cyan-500 py-4 w-5/6 rounded-t-md flex-col md:flex-row items-center gap-8 font-bold text-3xl text-center font-mono">
+        14 de Mayo de 2026
+      </div>
+      <div className="flex md:justify-around md:px-10 bg-foreground py-4 w-5/6 rounded-b-md flex-col md:flex-row items-center gap-8 ">
+        <div className="items-center text-background text-3xl md:text-6xl font-bold font-mono flex flex-row gap-1">
           {timeLeft ? (
             <>
               <TimeUnit value={timeLeft.days} label="Días" />
-              <p className=" text-background text-3xl md:text-6xl font-bold font-mono">
-                :
-              </p>
+              <p className=" ">:</p>
               <TimeUnit value={timeLeft.hours} label="Horas" />
-              <p className=" text-background text-3xl md:text-6xl font-bold font-mono">
-                :
-              </p>
+              <p>:</p>
               <TimeUnit value={timeLeft.minutes} label="Min" />
-              <p className=" text-background text-3xl md:text-6xl font-bold font-mono">
-                :
-              </p>
+              <p>:</p>
               <TimeUnit value={timeLeft.seconds} label="Seg" />
             </>
           ) : (
             <>
               <TimeUnit value={0} label="Días" />
-              <p className=" text-background text-3xl md:text-6xl font-bold font-mono">
-                :
-              </p>
+              <p>:</p>
               <TimeUnit value={0} label="Horas" />
-              <p className=" text-background text-3xl md:text-6xl font-bold font-mono">
-                :
-              </p>
+              <p>:</p>
               <TimeUnit value={0} label="Min" />
-              <p className=" text-background text-3xl md:text-6xl font-bold font-mono">
-                :
-              </p>
+              <p>:</p>
               <TimeUnit value={0} label="Seg" />
             </>
           )}
@@ -93,12 +84,8 @@ const Counter = () => {
 
         <div className="flex flex-col gap-2 md:justify-center text-background w-full md:w-fit px-6">
           <div className=" flex flex-row gap-2">
-            <Calendar />
-            <p>14 de Mayo de 2026</p>
-          </div>
-          <div className=" flex flex-row gap-2">
             <Clock />
-            <p>De 9:00 a.m. a 4:00 p.m.</p>
+            <p>De 8:00 a.m. a 6:00 p.m.</p>
           </div>
           <div className=" flex flex-row gap-2">
             <Pin />
