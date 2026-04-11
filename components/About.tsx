@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full gap-6 md:gap-10 px-6 md:px-12 py-8 justify-between">
+    <div className="flex flex-col md:flex-row w-full gap-6 md:gap-10 px-6 md:px-12 py-8 justify-between" id="acerca-de">
       <div className="w-full md:min-w-1/2 md:max-w-1/2 space-y-6 md:space-y-8 flex flex-col justify-center">
         <div className="flex flex-col items-center  lg:flex-row md:grid md:grid-rows-2 md:grid-cols-2 text-5xl text-center md:items-start w-full md:w-fit text-nowrap md:text-5xl gap-2 md:justify-start md:gap-1 font-semibold">
           <div className="w-fit">¿Qué es </div>

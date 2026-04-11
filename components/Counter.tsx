@@ -1,7 +1,7 @@
 "use client";
 
-import { Calendar, Clock, Pin } from "lucide-react";
-import { useState, useEffect, useMemo } from "react";
+import { Clock, Pin } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 
 interface TimeLeft {
   days: number;
@@ -85,7 +85,7 @@ const Counter = () => {
         <div className="flex flex-col gap-2 md:justify-center text-background w-full md:w-fit px-6">
           <div className=" flex flex-row gap-2">
             <Clock />
-            <p>De 8:00 a.m. a 6:00 p.m.</p>
+            <p>De 8:00 a.m. a 3:00 p.m.</p>
           </div>
           <div className=" flex flex-row gap-2">
             <Pin />

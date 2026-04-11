@@ -1,22 +1,21 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
 import { prefix } from "@/lib/prefix";
+import Image from "next/image";
+import { useState } from "react";
 
 const navLinks = [
   { name: "Acerca de", href: "#acerca-de" },
   { name: "Ponentes", href: "#ponentes" },
+  { name: "Cronograma", href: "#cronograma" },
   { name: "FAQ", href: "#faq" },
-  { name: "Universidades", href: "#universidades" },
-  { name: "Patrocinadores", href: "#patrocinadores" },
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-background border-b border-gray-200 sticky top-0 z-10">
+    <nav className="w-full bg-background border-b border-gray-200 fixed top-0 z-10">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-6">
@@ -85,7 +84,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
           isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"

@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -30,21 +30,24 @@ const Footer = () => {
             <div className="flex flex-row items-center gap-2">
               <Mail size={18} />
               <a
-                href="mailto:contacto@cumbre.edu.mx"
+                href="mailto:cumbre2026@magastagroup.com"
                 className="hover:opacity-80"
               >
-                contacto@cumbre.edu.mx
+                cumbre2026@magastagroup.com
               </a>
             </div>
             <div className="flex flex-row items-center gap-2">
               <Phone size={18} />
-              <a href="tel:+524421234567" className="hover:opacity-80">
-                +52 (442) 123-4567
+              <a href="tel:+111111111111" className="hover:opacity-80">
+                +52 (000) 0000
               </a>
             </div>
             <div className="flex flex-row items-center gap-2">
               <MapPin size={18} />
-              <span>Ubicación, Querétaro, Qro.</span>
+              <span>
+                Av. Cerro Sombrerete, Las Americas, 76121 Santiago de Querétaro,
+                Qro.
+              </span>
             </div>
           </div>
         </div>

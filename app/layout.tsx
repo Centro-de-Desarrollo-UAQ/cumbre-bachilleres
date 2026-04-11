@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Urbanist, IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Sans, Urbanist } from "next/font/google";
 import "./globals.css";
 
 const urbanist = Urbanist({
