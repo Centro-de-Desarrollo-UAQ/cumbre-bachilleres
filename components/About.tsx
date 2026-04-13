@@ -1,10 +1,12 @@
-import Image from "next/image";
 import { prefix } from "@/lib/prefix";
-import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full gap-6 md:gap-10 px-6 md:px-12 py-8 justify-between" id="acerca-de">
+    <div
+      className="flex flex-col md:flex-row w-full gap-6 md:gap-10 px-6 md:px-12 py-8 justify-between"
+      id="acerca-de"
+    >
       <div className="w-full md:min-w-1/2 md:max-w-1/2 space-y-6 md:space-y-8 flex flex-col justify-center">
         <div className="flex flex-col items-center  lg:flex-row md:grid md:grid-rows-2 md:grid-cols-2 text-5xl text-center md:items-start w-full md:w-fit text-nowrap md:text-5xl gap-2 md:justify-start md:gap-1 font-semibold">
           <div className="w-fit">¿Qué es </div>
@@ -26,7 +28,7 @@ const About = () => {
           es estar en la cima, sino la claridad con la que regresas a casa. Te
           invitamos a compartir{" "}
           <span className="font-bold text-primary">CUMBRE</span>, nuestro Primer
-          Congreso de liderazgo y transformación Juvenil. Un espacio para
+          Congreso de Liderazgo y Transformación Juvenil. Un espacio para
           compartir, nutrir y celebrar la vida. Esta{" "}
           <span className="font-bold text-primary">CUMBRE</span> surgió para
           acercarte a conferencistas y panelistas que a través de pláticas

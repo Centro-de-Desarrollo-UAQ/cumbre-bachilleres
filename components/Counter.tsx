@@ -89,7 +89,7 @@ const Counter = () => {
           </div>
           <div className=" flex flex-row gap-2">
             <Pin />
-            <p>Auditorío Josefa Ortiz de Domínguez</p>
+            <p>Auditorio Josefa Ortiz de Domínguez</p>
           </div>
         </div>
       </div>

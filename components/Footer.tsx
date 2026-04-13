@@ -38,8 +38,11 @@ const Footer = () => {
             </div>
             <div className="flex flex-row items-center gap-2">
               <Phone size={18} />
-              <a href="tel:+111111111111" className="hover:opacity-80">
-                +52 (000) 0000
+              <a
+                href="https://wa.me/5214428256970"
+                className="hover:opacity-80"
+              >
+                +52 (442) 825 6970
               </a>
             </div>
             <div className="flex flex-row items-center gap-2">
@@ -58,7 +61,7 @@ const Footer = () => {
             derechos reservados.
           </p>
         </div>
-        <p className=" mt-2 text-sm text-center">
+        <p className=" mt-8 text-sm text-center">
           Made with ♥︎ by Centro de Desarrollo, Facultad de Informática UAQ
         </p>
       </div>
