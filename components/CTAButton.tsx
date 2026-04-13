@@ -2,7 +2,7 @@ import { Link } from "lucide-react";
 
 export default function CTAButton() {
   return (
-    <section className="flex justify-center items-center py-16 px-4 md:px-0">
+    <section className="flex justify-center items-center py-16 px-4 md:px-0 flex-col gap-4">
       <a
         href="https://www.eventbrite.com.mx/e/cumbre-tickets-1985834870555"
         target="_blank"
@@ -30,6 +30,12 @@ export default function CTAButton() {
           }
         }
       `}</style>
+
+      <p className="text-primary text-md text-justify">
+        ** El costo final de los boletos puede variar al momento del pago debido
+        a los cargos por servicio y procesamiento de la plataforma{" "}
+        <a href="https://www.eventbrite.com.mx/">Eventbrite</a>.
+      </p>
     </section>
   );
 }
