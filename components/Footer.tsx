@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
@@ -6,24 +7,20 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex flex-row gap-6">
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-80 transition-opacity"
-              aria-label="Facebook"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-80 transition-opacity"
-              aria-label="Instagram"
-            >
-              Instagram
-            </a>
+            <SocialIcon
+              network="facebook"
+              url="https://www.facebook.com/profile.php?id=61572072213576"
+            />
+
+            <SocialIcon
+              network="instagram"
+              url="https://www.instagram.com/cumbrebachilleresuaq?igsh=ZHlzZWh1YjM4cnFs"
+            />
+
+            <SocialIcon
+              network="tiktok"
+              url="https://www.tiktok.com/@cumbrebachilleresuaq?_r=1&_t=ZS-95WHVe64Fx1"
+            />
           </div>
 
           <div className="flex flex-col gap-2 text-center md:text-left">

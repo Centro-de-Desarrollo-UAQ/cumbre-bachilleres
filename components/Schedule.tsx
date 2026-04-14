@@ -86,7 +86,7 @@ const Schedule = () => {
     {
       time: "12:00 - 13:00",
       title: "Conferencia: Hackea tu mente",
-      description: "Ponentes: Manolo Guevara e Isabel Castellano",
+      description: "Ponentes: Manolo Guevara e Isabel Castellanos",
       icon: <Lightbulb className="w-5 h-5 text-primary" />,
       isHighlight: true,
     },
