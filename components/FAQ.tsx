@@ -49,8 +49,8 @@ const faqData = [
           El costo del acceso depende de la fecha de compra:
         </p>
         <ul className="list-disc list-inside space-y-1 ml-2">
-          <li>$275.00 MXN hasta el 20 de abril</li>
-          <li>$350.00 MXN del 21 de abril al 14 de mayo</li>
+          <li>$275.00 MXN hasta el 24 de abril</li>
+          <li>$350.00 MXN del 25 de abril al 14 de mayo</li>
         </ul>
         <p className="text-primary text-md text-justify">
           ** El costo final de los boletos puede variar al momento del pago
