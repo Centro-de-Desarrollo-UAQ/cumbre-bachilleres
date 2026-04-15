@@ -99,7 +99,7 @@ const Schedule = () => {
     },
     {
       time: "13:00 - 14:00",
-      title: "El Juego Interno",
+      title: "Domina tu juego interior",
       description: "Ponente: Tico Perezgrovas",
       icon: <BrainCircuit className="w-5 h-5 text-primary" />,
       isHighlight: true,
