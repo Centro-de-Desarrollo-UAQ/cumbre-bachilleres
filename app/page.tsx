@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Counter from "@/components/Counter";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import Instructions from "@/components/Instructions";
 import Location from "@/components/Location";
 import Schedule from "@/components/Schedule";
 import Speakers from "@/components/Speakers";
@@ -25,6 +26,7 @@ export default function Home() {
           "https://nathalia-dssb.github.io/cumbres-bachilleres-assets/invitacion_director_bachilleres.mp4"
         }
       />
+      <Instructions />
       <CTAButton />
       <About />
       <Speakers />
