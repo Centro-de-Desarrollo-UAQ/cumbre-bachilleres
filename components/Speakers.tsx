@@ -27,6 +27,14 @@ const speakers: Speaker[] = [
     link: "https://www.instagram.com/andrea_echegoyen/",
   },
   {
+    name: "Ximena Ugalde",
+    title: "Viajera, emprendedora, y creadora de contenido",
+    image: `${prefix}/xime_ugalde.png`,
+    description:
+      "Una 'Mexicana con alas', se atrevió a seguir su sueño y dedicarse a viajar por el mundo. Ahora, con toda su experiencia viajera y emprendedora, sigue inspirando a más personas a diseñar su propio destino. ",
+    link: "https://www.instagram.com/mexicanaconalas/",
+  },
+  {
     name: "Joss Audi",
     title: "Facilitador y Coach de vida y organizacional",
     image: `${prefix}/JosAudi_IDENTIDADjpeg.jpeg`,
@@ -57,15 +65,6 @@ const speakers: Speaker[] = [
     description:
       "Se dedica a dar conferencias e inspirar a más personas para encontrar claridad en sus propósitos de vida. Nos ayudará a entender cómo podemos diseñar nuestra vida. ",
     link: "https://www.instagram.com/tico_perezgrovas/",
-  },
-  {
-    name: "Ximena Ugalde",
-    title:
-      'Locutor, productor de radio y conferencista. "Un alquimista del entretenimiento"',
-    image: `${prefix}/xime_ugalde.png`,
-    description:
-      "Una 'Mexicana con alas', se atrevió a seguir su sueño y dedicarse a viajar por el mundo. Ahora, con toda su experiencia viajera y emprendedora, sigue inspirando a más personas a diseñar su propio destino. ",
-    link: "https://www.instagram.com/mexicanaconalas/",
   },
   {
     name: "Íkaro Atón",
