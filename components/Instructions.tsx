@@ -39,15 +39,15 @@ const steps: Step[] = [
     icon: <CheckCircle2 className="w-6 h-6" />,
   },
   {
-    title: "Datos de Pago por Transferencia o OXXO",
+    title: "Datos de Pago por Transferencia",
     description:
-      "Si tu pedido fue para pago por transferencia o depósito en OXXO, accede a tu correo y revisa el correo que llegó con el título 'Confirmación de la solicitud para CUMBRE'. En la parte baja del correo vendrán los datos para tu depósito.",
+      "Si tu pedido fue para pago por transferencia, accede a tu correo y revisa el correo que llegó con el título 'Confirmación de la solicitud para CUMBRE'. En la parte baja del correo vendrán los datos para tu depósito.",
     icon: <CreditCard className="w-6 h-6" />,
   },
   {
     title: "Envío de Comprobante",
     description:
-      "Una vez que realices tu pago en Oxxo o a través de transferencia deberás enviar tu comprobante a cumbre2026@magastagroup.com con tu nombre completo, plantel y fecha en que hiciste el pago.",
+      "Una vez que realices tu pago a través de transferencia deberás enviar tu comprobante a cumbre2026@magastagroup.com con tu nombre completo, plantel y fecha en que hiciste el pago.",
     icon: <Mail className="w-6 h-6" />,
   },
   {

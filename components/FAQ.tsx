@@ -61,7 +61,6 @@ const faqData = [
           Formas de pago disponibles:
         </p>
         <ul className="list-disc list-inside space-y-1 ml-2">
-          <li>Pago en OXXO</li>
           <li>Transferencia bancaria</li>
           <li>Pago directo en la página web con tarjeta de crédito o débito</li>
         </ul>
