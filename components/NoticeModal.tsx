@@ -52,7 +52,6 @@ const NoticeModal = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-      // Allow for a tiny delay to trigger the transition
       setTimeout(() => setShowContent(true), 10);
     }, 500);
     return () => clearTimeout(timer);
@@ -61,11 +60,11 @@ const NoticeModal = () => {
   if (!isOpen) return null;
 
   return (
-    <div 
+    <div
       className={`fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity duration-500 ${showContent ? "opacity-100" : "opacity-0"}`}
     >
-      <div 
-        className={`bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto relative transition-all duration-500 transform ${showContent ? "scale-100 translate-y-0" : "scale-95 translate-y-4"}`}
+      <div
+        className={`bg-white rounded-3xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto scrollbar-hide relative transition-all duration-500 transform ${showContent ? "scale-100 translate-y-0" : "scale-95 translate-y-4"}`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -99,7 +98,11 @@ const NoticeModal = () => {
               <CreditCard className="w-5 h-5" />
             </div>
             <p className="text-sm md:text-base text-foreground/80 leading-relaxed">
-              A partir del <span className="font-bold text-primary">lunes 11 de mayo</span> no tendremos opción de Pago por transferencia electrónica únicamente podrás comprar tus boletos con tarjeta de débito o crédito en nuestra pag. oficial.
+              A partir del{" "}
+              <span className="font-bold text-primary">lunes 11 de mayo</span>{" "}
+              no tendremos opción de Pago por transferencia electrónica
+              únicamente podrás comprar tus boletos con tarjeta de débito o
+              crédito en nuestra pag. oficial.
             </p>
           </div>
 
@@ -129,7 +132,8 @@ const NoticeModal = () => {
           {/* Footer */}
           <div className="mt-10 pt-6 border-t border-foreground/5 text-center">
             <p className="text-foreground/70 italic mb-6">
-              Recuerda: Cumbre es para disfrutar y conectar. Ayúdanos a que tu entrada sea fluida siguiendo estas indicaciones.
+              Recuerda: Cumbre es para disfrutar y conectar. Ayúdanos a que tu
+              entrada sea fluida siguiendo estas indicaciones.
             </p>
             <button
               onClick={() => setIsOpen(false)}
@@ -140,11 +144,11 @@ const NoticeModal = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Background click to close */}
-      <div 
-        className="absolute inset-0 -z-10" 
-        onClick={() => setIsOpen(false)} 
+      <div
+        className="absolute inset-0 -z-10"
+        onClick={() => setIsOpen(false)}
       />
     </div>
   );
