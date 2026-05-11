@@ -11,10 +11,12 @@ import CTAButton from "@/components/CTAButton";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import VideoSection from "@/components/VideoSection";
+import NoticeModal from "@/components/NoticeModal";
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
+      <NoticeModal />
       <Navbar />
       <div className="w-full h-fit px-4 md:px-10 pt-8">
         <Hero />
